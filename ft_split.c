@@ -6,7 +6,7 @@
 /*   By: apoet <apoet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 18:20:29 by febouana          #+#    #+#             */
-/*   Updated: 2024/08/27 20:06:38 by apoet            ###   ########.fr       */
+/*   Updated: 2024/08/27 20:09:30 by apoet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void ft_init_vars(size_t *i, size_t *j, int *start)
     *start = 0;
 }
 
-static void *ft_free_tabtab(char **result, int count) //*OKOK
+static void *ft_free_tabtab(char **result, int count)
 {
     int i;
 
@@ -33,7 +33,7 @@ static void *ft_free_tabtab(char **result, int count) //*OKOK
     return (NULL);
 }
 
-static size_t count_words(char *str, char separator) //* OKOK
+static size_t count_words(char *str, char separator)
 {
     size_t i;
     size_t counter;
@@ -55,7 +55,7 @@ static size_t count_words(char *str, char separator) //* OKOK
     return (counter);
 }
 
-static char *set_word(char *str, int start, int end) //* OKOK
+static char *set_word(char *str, int start, int end)
 {
     char *word;
     int i;
