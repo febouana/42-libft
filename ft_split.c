@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apoet <apoet@student.42.fr>                +#+  +:+       +#+        */
+/*   By: febouana <febouana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 18:20:29 by febouana          #+#    #+#             */
-/*   Updated: 2024/08/27 20:09:30 by apoet            ###   ########.fr       */
+/*   Updated: 2024/09/11 18:05:20 by febouana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ static char *set_word(char *str, int start, int end)
     return (word);
 }
 
-static char **ft_split(char *str, char audd)
+char **ft_split(char *str, char audd)
 {
     size_t i;
     size_t j;
