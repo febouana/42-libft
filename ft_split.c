@@ -6,96 +6,96 @@
 /*   By: febouana <febouana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 18:20:29 by febouana          #+#    #+#             */
-/*   Updated: 2024/09/15 17:29:30 by febouana         ###   ########.fr       */
+/*   Updated: 2024/09/15 18:18:48 by febouana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void ft_init_vars(size_t *i, size_t *j, int *start)
+static void	ft_init_vars(size_t *i, size_t *j, int *start)
 {
-    *i = 0;
-    *j = 0;
-    *start = 0;
+	*i = 0;
+	*j = 0;
+	*start = 0;
 }
 
-static void *ft_free_tabtab(char **result, int count)
+static void	*ft_free_tabtab(char **result, int count)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (i < count)
-    {
-        free(result[i]);
-        i++;
-    }
-    free(result);
-    return (NULL);
+	i = 0;
+	while (i < count)
+	{
+		free(result[i]);
+		i++;
+	}
+	free(result);
+	return (NULL);
 }
 
-static size_t count_words(const char *str, char separator)
+static size_t	count_words(const char *str, char separator)
 {
-    size_t i;
-    size_t counter;
+	size_t	i;
+	size_t	counter;
 
-    i = 0;
-    counter = 0;
-    while (str[i] != '\0')
-    {
-        if (str[i] != separator)
-        {
-            counter++;
-            while (str[i] != separator && str[i] != '\0')
-                i++;
-        }
-        else 
-            while (str[i] == separator && str[i] != '\0')
-                i++;
-    }            
-    return (counter);
+	i = 0;
+	counter = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] != separator)
+		{
+			counter++;
+			while (str[i] != separator && str[i] != '\0')
+				i++;
+		}
+		else
+			while (str[i] == separator && str[i] != '\0')
+				i++;
+	}
+	return (counter);
 }
 
-static char *set_word(const char *str, int start, int end)
+static char	*set_word(const char *str, int start, int end)
 {
-    char *word;
-    int i;
+	char	*word;
+	int		i;
 
-    i = 0;
-    word = malloc((end - start + 1) * sizeof(char));
-    while (start < end)
-    {
-        word[i] = str[start];
-        start++;
-        i++;
-    }
-    word[i] = '\0';
-    return (word);
+	i = 0;
+	word = malloc((end - start + 1) * sizeof(char));
+	while (start < end)
+	{
+		word[i] = str[start];
+		start++;
+		i++;
+	}
+	word[i] = '\0';
+	return (word);
 }
 
-char **ft_split(const char *str, char audd)
+char	**ft_split(const char *str, char audd)
 {
-    size_t i;
-    size_t j;
-    int start;
-    char **result; 
-    
-    ft_init_vars(&i, &j, &start);
-    result = ft_calloc(count_words(str, audd) + 1, sizeof(char *));
-    if (!result)
-        return (NULL);
-    while (str[i] != '\0')
-    {
-        if (str[i] == audd)
-            i++;
-        else
-        {   
-            start = i;
-            while (str[i] != audd && str[i] != '\0')
-                i++;
-            result[j++] = set_word(str, start, i);
-            if (!result[j - 1])
-                return (ft_free_tabtab(result, j));
-        }
-    }
-    return (result);
+	size_t	i;
+	size_t	j;
+	int		start;
+	char	**result;
+
+	ft_init_vars(&i, &j, &start);
+	result = ft_calloc(count_words(str, audd) + 1, sizeof(char *));
+	if (!result)
+		return (NULL);
+	while (str[i] != '\0')
+	{
+		if (str[i] == audd)
+			i++;
+		else
+		{
+			start = i;
+			while (str[i] != audd && str[i] != '\0')
+				i++;
+			result[j++] = set_word(str, start, i);
+			if (!result[j - 1])
+				return (ft_free_tabtab(result, j));
+		}
+	}
+	return (result);
 }
