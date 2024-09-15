@@ -6,7 +6,7 @@
 /*   By: febouana <febouana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 18:20:29 by febouana          #+#    #+#             */
-/*   Updated: 2024/09/11 18:05:20 by febouana         ###   ########.fr       */
+/*   Updated: 2024/09/15 17:29:30 by febouana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static void *ft_free_tabtab(char **result, int count)
     return (NULL);
 }
 
-static size_t count_words(char *str, char separator)
+static size_t count_words(const char *str, char separator)
 {
     size_t i;
     size_t counter;
@@ -55,7 +55,7 @@ static size_t count_words(char *str, char separator)
     return (counter);
 }
 
-static char *set_word(char *str, int start, int end)
+static char *set_word(const char *str, int start, int end)
 {
     char *word;
     int i;
@@ -72,7 +72,7 @@ static char *set_word(char *str, int start, int end)
     return (word);
 }
 
-char **ft_split(char *str, char audd)
+char **ft_split(const char *str, char audd)
 {
     size_t i;
     size_t j;
