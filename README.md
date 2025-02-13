@@ -17,6 +17,13 @@ To compile:
 cd libft && make
 ```
 
+
+
+
+
+
+
+
 This will generate a libft.a static library file!
 To use the library in your project, include the header file and link the compiled library!
 
