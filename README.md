@@ -44,7 +44,7 @@ To use the library in your project, include the header file and link the compile
 - `ft_strnstr` : Locates a substring in a string.
 - `ft_atoi` : Converts a string to an integer.
 
-For the following two functions, we can use the malloc() function:
+For the following two functions, we can use the malloc() function :
 
 - `ft_calloc` : Allocates memory and initializes it to zero.
 - `ft_strdup` : Duplicates a string.
