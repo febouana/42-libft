@@ -71,5 +71,5 @@ typedef struct s_list
 
 ---
 
-Thanks for reading, I hope you enjoy the project!  🚀
+Thanks for reading, I hope you enjoy the project!  🤖
 
