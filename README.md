@@ -1,7 +1,6 @@
 # 42-Libft
 <br>
-
-Libft is one of the first projects in the 42 curriculum, focusing on reimplementing essential C library functions to deepen our understanding of memory manipulation, string operations, and linked lists. The goal is to create a personal library that can be reused in future projects.<br>
+Libft is one of the first projects in the 42 curriculum, focusing on reimplementing essential C library functions based on their behavior as described in the man pages. This helps deepen our understanding of memory manipulation, string operations, and linked lists. The goal is to create a personal library that can be reused in future projects.
 <br>
 
 ## How to use
@@ -16,14 +15,6 @@ To compile:
 ```
 cd libft && make
 ```
-
-
-
-
-
-
-
-
 This will generate a libft.a static library file!
 To use the library in your project, include the header file and link the compiled library!
 
