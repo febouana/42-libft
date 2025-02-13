@@ -18,15 +18,15 @@ cd libft && make
 This will generate a libft.a static library file!
 To use the library in your project, include the header file and link the compiled library!
 
-## Mandatory part:
-### Character Tests
+## Mandatory part :
+### Character Tests :
 - `ft_isalpha` : Checks if a character is alphabetic.
 - `ft_isdigit` : Checks if a character is a digit.
 - `ft_isalnum` : Checks if a character is alphanumeric.
 - `ft_isascii` : Checks if a character is an ASCII character.
 - `ft_isprint` : Checks if a character is printable.
 
-### String and Memory Manipulation
+### String and Memory Manipulation :
 - `ft_strlen` : Returns the length of a string.
 - `ft_memset` : Fills a block of memory with a specific value.
 - `ft_bzero` : Sets a block of memory to zero.
@@ -46,7 +46,7 @@ To use the library in your project, include the header file and link the compile
 - `ft_calloc` : Allocates memory and initializes it to zero.
 - `ft_strdup` : Duplicates a string.
 
-## Bonus part:
+## Bonus part :
 
 The project also includes basic linked list operations using the following structure:
 
@@ -58,7 +58,7 @@ typedef struct s_list
 } t_list;
 ```
 
-### Linked Lists:
+### Linked Lists :
 - `ft_lstnew` : Creates a new list element.
 - `ft_lstadd_front` : Adds an element to the front of the list.
 - `ft_lstsize` : Returns the size of the list.
