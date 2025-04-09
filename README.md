@@ -47,6 +47,8 @@ Our library implementation includes the following features:
   - `ft_isprint`: Checks if a character is printable.
   - `ft_toupper`: Converts a character to uppercase.
   - `ft_tolower`: Converts a character to lowercase.
+ 
+### **🎯 Bonus Part**
 
 - **Linked List Functions**: 
   - `ft_lstnew`: Creates a new linked list node.
