@@ -11,16 +11,53 @@ The goal of this project is to re-implement standard C library functions. This i
 - **String Manipulation:** Functions for handling strings, such as copying, concatenation, and searching.
 - **Memory Allocation:** Functions for dynamic memory management.
 - **Character Checking:** Functions to test and convert individual characters.
-- **Linked List:** Basic linked list operations.
+- **Linked List:** Basic linked list operations (BONUS PART).
 
 ### **Features**
 
 Our library implementation includes the following features:
 
-- **String Functions**: Implements functions like `ft_strlen`, `ft_strcpy`, `ft_strdup`, `ft_strcmp`, `ft_strncmp`, `ft_strcat`, `ft_strncat`, `ft_strchr`, `ft_strrchr`, `ft_strstr`, `ft_strnstr`, and more.
-- **Memory Functions**: Implements functions like `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memccpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`, and more.
-- **Character Functions**: Includes functions like `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`, `ft_toupper`, and `ft_tolower`.
-- **Linked List Functions**: Implements basic linked list operations like `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, and `ft_lstmap`.
+- **String Functions**: 
+  - `ft_strlen`: Returns the length of a string.
+  - `ft_strcpy`: Copies a string to another string.
+  - `ft_strdup`: Duplicates a string by allocating memory for the new string.
+  - `ft_strcmp`: Compares two strings.
+  - `ft_strncmp`: Compares two strings up to a specified number of characters.
+  - `ft_strcat`: Concatenates two strings.
+  - `ft_strncat`: Concatenates two strings up to a specified number of characters.
+  - `ft_strchr`: Locates the first occurrence of a character in a string.
+  - `ft_strrchr`: Locates the last occurrence of a character in a string.
+  - `ft_strstr`: Locates a substring in a string.
+  - `ft_strnstr`: Locates a substring in a string up to a specified number of characters.
+
+- **Memory Functions**: 
+  - `ft_memset`: Fills a block of memory with a specified value.
+  - `ft_bzero`: Sets a block of memory to zero.
+  - `ft_memcpy`: Copies a block of memory from one location to another.
+  - `ft_memccpy`: Copies a block of memory up to a specified character.
+  - `ft_memmove`: Copies a block of memory, handling overlapping regions.
+  - `ft_memchr`: Locates a character in a block of memory.
+  - `ft_memcmp`: Compares two blocks of memory.
+
+- **Character Functions**: 
+  - `ft_isalpha`: Checks if a character is an alphabetic letter.
+  - `ft_isdigit`: Checks if a character is a digit.
+  - `ft_isalnum`: Checks if a character is alphanumeric.
+  - `ft_isascii`: Checks if a character is an ASCII character.
+  - `ft_isprint`: Checks if a character is printable.
+  - `ft_toupper`: Converts a character to uppercase.
+  - `ft_tolower`: Converts a character to lowercase.
+
+- **Linked List Functions**: 
+  - `ft_lstnew`: Creates a new linked list node.
+  - `ft_lstadd_front`: Adds a new node at the beginning of a linked list.
+  - `ft_lstsize`: Returns the number of nodes in a linked list.
+  - `ft_lstlast`: Returns the last node of a linked list.
+  - `ft_lstadd_back`: Adds a new node at the end of a linked list.
+  - `ft_lstdelone`: Deletes a single node from a linked list.
+  - `ft_lstclear`: Deletes all nodes from a linked list.
+  - `ft_lstiter`: Applies a function to each node of a linked list.
+  - `ft_lstmap`: Applies a function to each node of a linked list and creates a new list.
 
 ### **Requirements**
 - Must **not** use external libraries.
